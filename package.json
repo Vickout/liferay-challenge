@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@clayui/button": "^3.6.0",
+    "@clayui/css": "^3.25.0",
+    "@clayui/drop-down": "^3.25.0",
+    "@clayui/form": "^3.14.4",
+    "@clayui/icon": "^3.1.0",
+    "@clayui/management-toolbar": "^3.3.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
