@@ -1151,6 +1151,22 @@
     "@clayui/icon" "^3.1.0"
     classnames "^2.2.6"
 
+"@clayui/card@^3.25.0":
+  version "3.25.0"
+  resolved "https://registry.yarnpkg.com/@clayui/card/-/card-3.25.0.tgz#f2e3076597c147751372dd4fca286feef06b3ee9"
+  integrity sha512-hIexj4zjP1R7lplYMpxnUJPvD5kZuBau6nwqRnVFc8B0D7PidfMUtPp+iTxZr2v0zNVeaXBtQz8fLOfnuyg6gA==
+  dependencies:
+    "@clayui/button" "^3.6.0"
+    "@clayui/drop-down" "^3.25.0"
+    "@clayui/form" "^3.14.4"
+    "@clayui/icon" "^3.1.0"
+    "@clayui/label" "^3.4.1"
+    "@clayui/layout" "^3.3.0"
+    "@clayui/link" "^3.2.0"
+    "@clayui/shared" "^3.5.1"
+    "@clayui/sticker" "^3.3.0"
+    classnames "^2.2.6"
+
 "@clayui/css@^3.25.0":
   version "3.25.0"
   resolved "https://registry.yarnpkg.com/@clayui/css/-/css-3.25.0.tgz#533c6da279960e63ec0ef31003020c41875a9363"
@@ -1189,6 +1205,15 @@
     classnames "^2.2.6"
     warning "^4.0.3"
 
+"@clayui/label@^3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@clayui/label/-/label-3.4.1.tgz#af235c32c006e0d12d3bb3a3556706033aef9608"
+  integrity sha512-ReGAldU4JkNzvAO0GkmdRy6JIKVVxMF2/L2caG2RxQDVyLsWVB3uituqHCOp3PC3va4KVR0KYQJ7hb317vN15g==
+  dependencies:
+    "@clayui/icon" "^3.1.0"
+    "@clayui/link" "^3.2.0"
+    classnames "^2.2.6"
+
 "@clayui/layout@^3.3.0":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@clayui/layout/-/layout-3.3.0.tgz#89b54741787b2d9efaced088e5478fd7c0cb935e"
@@ -1212,6 +1237,26 @@
     "@clayui/layout" "^3.3.0"
     classnames "^2.2.6"
 
+"@clayui/modal@^3.8.5":
+  version "3.8.5"
+  resolved "https://registry.yarnpkg.com/@clayui/modal/-/modal-3.8.5.tgz#6eacec122c9ecd8af0b100d34cb30c884d33e5cd"
+  integrity sha512-U8o4eub5ujCUeFrVcfAgkxXv4ZX14LyUT5yYj/lDr7ihOE1LRXREnGmEWnINgP18TkUYobeQSj5F3YFnPXXnEg==
+  dependencies:
+    "@clayui/button" "^3.6.0"
+    "@clayui/icon" "^3.1.0"
+    "@clayui/shared" "^3.5.1"
+    classnames "^2.2.6"
+    warning "^4.0.3"
+
+"@clayui/popover@^3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@clayui/popover/-/popover-3.5.5.tgz#70062e7f09ea53e458d6ff56c173586c150988ff"
+  integrity sha512-IywMQ/pSP1fqqcRbvrKWxT7j9KeZ2eUOm31K1HMECKNCyNsGIpk9qQyjYmARYCl3d3E5yYjx8fMHZ7nfmNmWow==
+  dependencies:
+    "@clayui/shared" "^3.5.1"
+    classnames "^2.2.6"
+    dom-align "^1.10.2"
+
 "@clayui/shared@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@clayui/shared/-/shared-3.5.1.tgz#6daee67b300f346381dd126472802f0a83472c4c"
@@ -1219,6 +1264,13 @@
   dependencies:
     "@clayui/button" "^3.6.0"
     "@clayui/link" "^3.2.0"
+
+"@clayui/sticker@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@clayui/sticker/-/sticker-3.3.0.tgz#77fa3606688050bf9e731b49f319320c3718f00b"
+  integrity sha512-Qmu3jarLiyeQmTZYikIAk9g/npl8bPxN1xhaMWP4C95yUZJgCbvqwzDCSEPHYCR+QiedKizBVKG9kQMoqdmcPA==
+  dependencies:
+    classnames "^2.2.6"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -9050,6 +9102,11 @@ react-error-overlay@^6.0.9:
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
+
+react-icons@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
+  integrity sha512-rmzEDFt+AVXRzD7zDE21gcxyBizD/3NqjbX6cmViAgdqfJ2UiLer8927/QhhrXQV7dEj/1EGuOTPp7JnLYVJKQ==
 
 react-is@^16.8.1:
   version "16.13.1"
