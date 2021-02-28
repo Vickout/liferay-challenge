@@ -7,7 +7,7 @@ import { RepositoriesContext } from '../context/RepositoriesContext';
 
 import styles from '../styles/components/Modal.module.css';
 
-const Modal = ({ repoId }) => {
+const Modal = ({ repoInfo }) => {
   const { showModal, handleDeleteReposiory } = useContext(RepositoriesContext);
 
   return (
@@ -25,7 +25,7 @@ const Modal = ({ repoId }) => {
         <main>
           <p>Are you sure to delete the
             <span>
-              <strong> liferay/senna.js </strong>
+              <strong> {repoInfo.fullName} </strong>
             </span>
            repository?</p>
         </main>
@@ -41,7 +41,7 @@ const Modal = ({ repoId }) => {
             displayType="unstyled"
             className={styles.deleteButton}
             onClick={() => {
-              handleDeleteReposiory(repoId);
+              handleDeleteReposiory(repoInfo.id);
               showModal();
             }}
           >
