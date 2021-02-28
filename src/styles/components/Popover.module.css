@@ -1,0 +1,75 @@
+.container {
+  width: 448px;
+  height: 212px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  position: absolute;
+  right: 250px;
+  top: 60px;
+}
+
+.inputContainer {
+  padding: 0px 24px;
+  padding-top: 9px;
+}
+
+.container h1 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+.required {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.required:after {
+  content:" *";
+  color: #f00;
+}
+
+.input:focus {
+  border: 1px solid #80ACFF;
+  background: #F0F5FF;
+}
+
+.errorContainer {
+  height: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.textError {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #da1414;
+
+  margin: auto 0;
+  padding: 4px;
+}
+
+.buttonContainer {
+  padding: 16px 24px;
+  border-top: 1px solid #e7e7ed;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.buttonContainer button {
+  width: 72px;
+  height: 32px;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer button + button {
+  width: 52px;
+}
