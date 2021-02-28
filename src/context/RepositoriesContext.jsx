@@ -7,6 +7,11 @@ export function RepositoriesProvider({ children, ...rest }) {
   const [repository, setRepository] = useState('');
   const [reposList, setReposList] = useState([]);
   const [isPopoverActive, setIsPopoverActive] = useState(false);
+  const [isModalActive, setIsModalActive] = useState(false);
+
+  const showModal = useCallback(() => {
+    setIsModalActive(active => !active);
+  }, []);
 
   const [hasError, setHasError]  = useState(false);
 
@@ -25,6 +30,16 @@ export function RepositoriesProvider({ children, ...rest }) {
       setHasError(true);
     }
   }, [repository]);
+
+  const handleDeleteReposiory = useCallback((id) => {
+    reposList.map((repo, index) => {
+      console.log(repo.id);
+      if (repo.id === id) {
+        return reposList.splice(index, 1);
+      }
+    })
+  }, [reposList]);
+
   return (
     <RepositoriesContext.Provider
       value={{
@@ -35,6 +50,9 @@ export function RepositoriesProvider({ children, ...rest }) {
         isPopoverActive,
         reposList,
         hasError,
+        showModal,
+        isModalActive,
+        handleDeleteReposiory,
       }}
     >
       {children}

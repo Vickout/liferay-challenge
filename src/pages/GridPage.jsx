@@ -11,17 +11,14 @@ import styles from '../styles/pages/GridPage.module.css';
 import logo from '../assets/liferay.svg';
 
 const GridPage = () => {
+  const [repoId, setRepoId] = useState(0);
 
-  const { reposList } = useContext(RepositoriesContext);
+  const { reposList, showModal, isModalActive } = useContext(RepositoriesContext);
+  console.log(reposList);
 
-  const [isDeleteModalActive, setIsDeleteModalActive] = useState(false);
-
-  const showDeleteModal = () => {
-    setIsDeleteModalActive(true);
-  };
   return (
     <div className={styles.gridContainer}>
-      { isDeleteModalActive && <Modal />}
+      { isModalActive && <Modal repoId={repoId} />}
       <div className={styles.grid}>
         { reposList.length !== 0 && reposList.map(repo => (
           <div key={repo.id} className={styles.cardRepository}>
@@ -32,7 +29,12 @@ const GridPage = () => {
                 <ClayButton displayType="unstyled">
                   <FiStar size={16} color="#6b6c7e" />
                 </ClayButton>
-                <ClayButton onClick={showDeleteModal} displayType="unstyled">
+                <ClayButton
+                  onClick={() => {
+                    showModal();
+                    setRepoId(repo.id);
+                  }}
+                  displayType="unstyled">
                   <FiTrash size={16} color="#6b6c7e" />
                 </ClayButton>
               </div>
