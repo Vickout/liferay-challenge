@@ -1,0 +1,107 @@
+.overlay {
+  background: rgba(57, 58, 74, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #fff;
+  width: 343px;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 60px rgba(216, 226, 248, 0.05);
+  text-align: center;
+  position: relative;
+}
+
+.container header {
+  height: 64px;
+  background: #fff4ec;
+  border-bottom: 1px solid #ff8f39;
+  padding: 17px 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container header div {
+  display: flex;
+  align-items: center;
+}
+
+.container header strong {
+  color: #b95000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+
+  margin-left: 9px;
+}
+
+.container main {
+  padding: 19px 39px 16px 25px;
+}
+
+.container main p {
+  margin: 0;
+
+  font-size: 14px;
+  text-align: left;
+}
+
+.container main p span strong {
+  color: #333333;
+}
+
+.button {
+  background: transparent;
+  border: 0;
+  font-size: 0;
+}
+
+.buttonContainer {
+  height: 72px;
+  padding: 16px 26px;
+  border-top: 1px solid #e7e7ed;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.buttonContainer button {
+  width: 86px;
+  height: 40px;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteButton {
+  width: 83px;
+  background: #b95000;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+
+  transition: background-color 0.2s;
+}
+
+.deleteButton:hover {
+  background: #783502;
+  color: #fff;
+}
+
+
