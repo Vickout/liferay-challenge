@@ -6,7 +6,6 @@ import GridPage from './pages/GridPage';
 import Toolbar from './components/Toobar';
 import Popover from './components/Popover';
 
-
 import './styles/global.css';
 
 function App() {
